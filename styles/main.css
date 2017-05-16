@@ -1,0 +1,200 @@
+/********** Global Styles *************/
+html {
+	background-color: rgb(4,17,45);
+	color: rgb(103,133,198);
+  margin: 0;
+}
+
+body {
+  font-size: 100%;
+  font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+	background: white;
+	width: 80%;
+	margin: 0 auto;
+	padding: 2%;
+	line-height: 1.6;
+}
+
+/************* Header Styles ***********/
+/* Modified to load screen appropriate image size */
+/*header img {
+  max-height: 6rem;
+}*/
+
+/*h1 .logo-w {
+  font-size: 3.5rem;
+}*/
+
+h1, h2, h3 {
+	font-family: LatoLight, Helvetica, sans-serif;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+	margin: 0;
+	line-height: 1;
+	color: rgb(4,17,45);
+}
+
+h1 {
+  font-size: 2.6rem;
+	font-weight: bold;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+	padding-top: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem; /* 1.2rem */
+	text-align: center;
+  text-transform: capitalize; /* uppercase */
+}
+
+.logo-w {
+	font-size: 3.5rem;
+	color: rgb(122,143,188);
+}
+
+.topHeader {
+	background-image: url('../images/winter-background.jpg');
+	background-color: rgb(4,17,45);
+	background-repeat: repeat;
+	color: rgb(103,133,198);
+}
+/*********** Products Section ***********/
+section {
+  padding: 0 .75rem;
+}
+
+p {
+   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+   font-weight: lighter;
+   color: #575451; /* #2d2d2d */
+	 margin: 0 0 1em;
+}
+
+/* Modified to load screen appropriate image sizes */
+/*img {
+	max-height: 15rem;
+}*/
+
+/**************** Navigation Styles ****************/
+nav a {
+  color: white;
+	text-decoration: none;
+}
+
+/* nav a:hover {
+  text-decoration: underline;
+} */
+
+nav li{
+	background-color: rgb(4,30,86);
+	margin: 0.1em 0;
+  border: 0.1em solid rgb(4,12,144);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.fa {
+	color: white;
+}
+/*********** Form Element Styles ********************/
+
+.search-form{
+  display: flex;
+  flex-wrap: wrap;
+  width: 82%;
+	margin: 0 auto;
+  padding-top: 1em;
+}
+
+.signup-form{
+  display: flex;
+  flex-wrap: wrap;
+  width: 82%;
+	margin: 0 auto;
+  padding-top: 1em;
+}
+
+input[type="search"], input[type="email"]{
+  box-sizing: border-box;
+  background: #E9E9E9;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0.35em 0.75em;
+  border: none;
+  font-size: 1.1em;
+  text-decoration: none;
+  line-height: normal;
+  max-height: 3em;
+  flex: 2 0 250px;
+}
+
+button[type="submit"]{
+  box-sizing: border-box;
+  border-radius: 0px 2px 2px 0px;
+  background-color: rgb(4,30,86);
+  font-weight: 300;
+  text-transform: uppercase;
+  color: white;
+  padding: 0.35em 0.75em;
+  border: none;
+  font-size: 1.1em;
+  text-decoration: none;
+  cursor: pointer;
+  flex: 1 0 90px;
+}
+
+button[type="submit"]:hover, .flex-item:hover{
+  background-color: rgb(4,12,144);
+}
+
+/***************** Flex Items - Flex Containers (nav ul & .item-container)*******/
+
+.flex-item{
+  flex:1;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-container{
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.pdt-flexitem{
+  flex:1;
+  border: 0.1em;
+  margin: 0.2em;
+  padding: 0.5em;
+}
+
+/************* Flex item styles to suit media ********/
+@media only screen and (max-width: 60em){
+  .flex-item {
+    flex:0 0 100%;
+  }
+
+  .pdt-flexitem {
+    flex:0 0 100%;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+/****************************************************/
+/* For wider screens greater than 480px or 30em, load background image */
+@media only screen and (min-width: 30em){
+html {
+	background-image: url('../images/winter-background.jpg');
+	background-color: rgb(4,17,45);
+	background-repeat: repeat;
+}
+}
